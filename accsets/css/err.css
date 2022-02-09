@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=opensans:500);
 body{
     background: #33cc99;
-    color:#fff;
+    color:pink;
     font-family: 'Open Sans', sans-serif;
     max-height:700px;
     overflow: hidden;
@@ -51,7 +51,7 @@ body{
 }
 
 .btn{
-    background-color: pink;
+    background-color: white;
     position: relative;
     display: inline-block;
     width: 358px;
