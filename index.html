@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <title>Nguyễn Viết Khôi</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="/accsets/img/icon.jpg" type="image/x-icon" />
+        <link rel="stylesheet" href="./accsets/css/mani.css">
+        <link rel="stylesheet" href="./accsets/css/responsive.css">
+        <link rel="stylesheet" href="./accsets/fonts/themify-icons/themify-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+    
+    <body>
+        <section class="stars-container">
+            <div class="board">
+                <div class="board__header">
+                    <div class="board__header-heading">
+                        <a href="https://www.google.com/" class="board__header-heading-btn">
+                            <i class="board__header-btn-back fas fa-arrow-left"></i>
+                        </a>
+                        <button class="board__header-heading-btn cursor-pointer js-buy-tim">
+                            <i class="board__header-btn-moon fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="board__header-img">
+                        <a href="">
+                            <img src="/accsets/img/ciu.jpeg" alt="" class="board__header-img--avatar">
+                        </a>
+                    </div>
+                    <div class="board__header-name">
+                        <ul class="board__header-name--list">
+                            <li class="board__header-name--list__item">
+                                Nguyễn Viết Khôi
+                                <i class="board__header-name-icon fas fa-check-circle"></i>
+                            </li>
+                        </ul>
+                        <div class="board__header-name--introduce">
+                            Tôi Là Một Developer
+                        </div>
+                    </div>
+                    <div class="board__header-link">
+                        <button class="board__header-link-btn">
+                            <a href="https://www.facebook.com/my.nvk03/">
+                                <i class="board__header-link--fb hover-btn fab fa-facebook"></i>
+                            </a>
+                        </button>
+                        <button class="board__header-link-btn">
+                            <a href="https://www.instagram.com/thanh_25t5/">
+                                <i class="board__header-link--itg hover-btn">
+                                    <img src="/accsets/img/Screenshot from 2021-12-29 10-40-27.png" alt="" class="icon-img">
+                                </i>
+                            </a>
+                        </button>
+                        <button class="board__header-link-btn">
+                            <a href="https://github.com/khoinv21it">
+                                <i class="board__header-link--gh hover-btn fab fa-github"></i>
+                            </a>
+                        </button>
+                    </div>
+                    <div class="footer">
+                        <button class="footer__btn">
+                            <a href="https://www.facebook.com/messages/t/100024749596820" class="footer__btn-message" target="_blank">Nhắn Tin</a>
+                        </button>
+                        <button class="footer__btn">
+                            <a href="./error.html" class="footer__btn-follow">Theo Dõi</a>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+            <div class="modal js-modal">
+                <div class="modal-container js-modal-container">
+                    <div class="modal-close js-modal-close">
+                        <i class="ti-close"></i>
+                    </div>
+                    <header class="modal-header">
+                        Thank You, Very Good
+                        <img src="./accsets/img/ban-tim.gif" alt="bắn tim nè" style="height: 100px; width: 100px;">
+                    </header>
+                </div>
+            </div>
+            <div class="container">
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12"></div>
+                    <div class="col-sm-6 col-xs-12"></div>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <script>
+            const buyBtns = document.querySelectorAll('.js-buy-tim')
+            const modal = document.querySelector('.js-modal')
+            const modalContainer =document.querySelector('.js-modal-container')
+            const modalClose = document.querySelector('.js-modal-close')
+    
+            // Hàm hiển thị modal mua vé (thê class open vào modal) 
+            function showBuyTickers() {
+                modal.classList.add('open')
+            }
+            // Hàm ẩn modal mua vé (gở bỏ open trong modal)
+            function hideBuyTickers() {
+                modal.classList.remove('open')
+            }
+            // lặp qua từng thẻ button và nghe hành vi click
+            for (const buyBtn of buyBtns) {
+                buyBtn.addEventListener('click', showBuyTickers)
+            }
+            // Nghe hành vi click vào button close
+            modalClose.addEventListener('click', hideBuyTickers)
+            modal.addEventListener('click', hideBuyTickers)
+            modalContainer.addEventListener('click', function(event) {
+                event.stopPropagation()
+            })
+        </script>
+    </body>
+   
+</html>

@@ -1,0 +1,134 @@
+
+@media  (max-width: 1023px) {
+
+
+}
+
+
+@media  (min-width: 740px) and (max-width: 1023px) {
+    .board {
+        padding: 65px 65px 172px;
+    }
+    .board__header {
+        width: 100%;
+        border-radius: 25px;
+        box-shadow: 0 1px 10px #999;
+    }
+    .board__header-heading-btn {
+        width: 50px;
+        height: 50px;
+    }
+    .board__header-btn-back {
+        margin: 7px;
+        font-size: 2rem;
+    }
+    .board__header-btn-moon {
+        margin: 5px;
+        font-size: 2rem;
+    }
+    .board__header-img {
+        height: 150px;
+        width: 150px;
+    }
+    .board__header-img--avatar {
+        height: 145px;
+        width: 145px;
+    }
+    .board__header-name--list__item {
+        font-size: 2.3rem;
+    }
+    .board__header-name--introduce {
+        font-size: 1.3rem;
+    }    
+    .board__header-link-btn {
+        margin: 19px 26px;
+        width: 100px;
+        height: 100px;
+    }
+    .board__header-link--fb {
+        font-size: 90px;
+    }
+    .icon-img {
+        height: 85px;
+        margin: 8px;
+        margin-bottom: -11px;
+    }
+    .board__header-link--gh {
+        font-size: 90px;
+    }
+    .footer__btn {
+        margin: 0px 30px;
+    }
+    .footer__btn-message {
+        font-size: 1.5rem;
+    }
+    .footer__btn-follow {
+        font-size: 1.5rem;
+    }
+
+}
+
+/*  mobile */
+@media  (max-width: 739px) {
+    .board {
+        padding: 65px 65px 172px;
+    }
+    .board__header {
+        width: 100%;
+        border-radius: 25px;
+        box-shadow: 0 1px 10px #999;
+    }
+    .board__header-heading-btn {
+        width: 50px;
+        height: 50px;
+    }
+    .board__header-btn-back {
+        margin: 7px;
+        font-size: 2rem;
+    }
+    .board__header-btn-moon {
+        margin: 5px;
+        font-size: 2rem;
+    }
+    .board__header-img {
+        height: 150px;
+        width: 150px;
+    }
+    .board__header-img--avatar {
+        height: 145px;
+        width: 145px;
+    }
+    .board__header-name--list__item {
+        font-size: 2.3rem;
+    }
+    .board__header-name--introduce {
+        font-size: 1.3rem;
+    }    
+    .board__header-link-btn {
+        margin: 19px 26px;
+        width: 100px;
+        height: 100px;
+    }
+    .board__header-link--fb {
+        font-size: 90px;
+    }
+    .icon-img {
+        height: 85px;
+        margin: 8px;
+        margin-bottom: -11px;
+    }
+    .board__header-link--gh {
+        font-size: 90px;
+    }
+    .footer__btn {
+        margin: 0px 30px;
+    }
+    .footer__btn-message {
+        font-size: 1.5rem;
+    }
+    .footer__btn-follow {
+        font-size: 1.5rem;
+    }
+
+
+}
