@@ -51,7 +51,7 @@ body{
 }
 
 .btn{
-    background-color: rgb( 255, 255, 255 );
+    background-color: pink;
     position: relative;
     display: inline-block;
     width: 358px;
